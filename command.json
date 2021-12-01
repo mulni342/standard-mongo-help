@@ -5,5 +5,9 @@
     "repo": "https://github.com/mulni342/standard-mongo-help.git",
     "author": "mulni342",
     "targetSystem": "standard-mongo",
-    "main": "dest/index.js"
+    "main": "dest/index.js",
+    "plugins": { },
+    "dependencies": {
+        "discord.js": "^13.3.1"
+    } 
 }

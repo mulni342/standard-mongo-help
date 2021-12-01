@@ -2,22 +2,27 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import { Client } from "botasm";
+import { Message } from "disord.js"
+
 export class Command {
     name: string = 'help';
-    aliases: string[] = [];
+    aliases: string[] = [ 'ayuda' ];
 
-    async init(message: any, client: any, margs: string[]) {
+    async init(message: Message, client: Client, margs: string[]) {
         if (!margs[0]) {
             message.channel.send('command will not be run!');
             return false;
         }
 
+        console.log("hola mundo!");
+
         return true;
     }
 
     async run(
-        message: any,
-        client: any,
+        message: Message,
+        client: Client,
         margs: string[],
         sargs?: any[],
         pargs?: any,
@@ -29,7 +34,7 @@ export class Command {
 
     async postrun(
         message: any,
-        client: any,
+        client: Client,
         margs: string[],
         sargs: any,
         pargs: any
