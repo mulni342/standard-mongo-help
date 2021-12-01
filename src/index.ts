@@ -28,7 +28,7 @@ export class Command {
         pargs?: any,
         cargs?: any
     ) {
-        console.log(cargs);
+        console.log("Command Version 0.1.0")
         message.channel.send('new cargs added!');
     }
 
