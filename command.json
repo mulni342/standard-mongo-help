@@ -4,5 +4,6 @@
     "description": "A help command that uses to standard-mongo system to provide help with you other commands!",
     "repo": "https://github.com/mulni342/standard-mongo-help.git",
     "author": "mulni342",
-    "targetSystem": "standard-mongo" 
+    "targetSystem": "standard-mongo",
+    "main": "dest/index.js"
 }
