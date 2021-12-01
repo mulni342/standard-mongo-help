@@ -6,7 +6,9 @@
     "author": "mulni342",
     "targetSystem": "standard-mongo",
     "main": "dest/index.js",
-    "plugins": { },
+    "plugins": { 
+        "languages_master": "v3.0.4"
+    },
     "dependencies": {
         "discord.js": "^13.3.1"
     } 
