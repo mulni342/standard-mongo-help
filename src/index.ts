@@ -2,6 +2,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import { Language } from "./lang";
+
 export class Command {
     name: string = 'help';
     aliases: string[] = [];
@@ -19,13 +21,12 @@ export class Command {
         message: any,
         client: any,
         margs: string[],
-        sargs?: any[],
+        sargs?: any,
         pargs?: any,
         cargs?: any
     ) {
-        console.log(cargs);
-        message.channel.send('new cargs added!');
-        
+        const langs = Language(sargs['language']);
+        message.channel.send(langs.testLang);
     }
 
     async postrun(
