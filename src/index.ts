@@ -25,6 +25,7 @@ export class Command {
     ) {
         console.log(cargs);
         message.channel.send('new cargs added!');
+        
     }
 
     async postrun(
